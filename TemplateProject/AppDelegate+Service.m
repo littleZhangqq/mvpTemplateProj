@@ -71,7 +71,6 @@
     if ([url.host isEqualToString:@"safepay"]) {
         [[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
             [self alipayHandleResult:[resultDic[@"resultStatus"] integerValue]];
-            [[NSNotificationCenter defaultCenter] postNotificationName:@"aliPayReslut" object:nil userInfo:resultDic];
         }];
         return YES;
     }else if ([url.host isEqualToString:@"pay"]){
@@ -87,18 +86,11 @@
     if ([resp isKindOfClass:[PayResp class]]) {
         // 支付返回结果，实际支付结果需要去微信服务器端查询
         switch (resp.errCode) {
-            case WXSuccess:{
-                NSNotification *notification = [NSNotification notificationWithName:@"WXPayNotification" object:@"success"];
-                [[NSNotificationCenter defaultCenter] postNotification:notification];
-                [[Event getInstance] handleEvent:WXPAY_WORK_DONE data:@(WXSuccess)];
-                return;
-            }
+            case WXSuccess:
+                strMsg =@"支付成功";
                 break;
-            case WXErrCodeCommon:{
-                NSNotification *notification = [NSNotification notificationWithName:@"WXPayNotification" object:@"fail"];
-                [[NSNotificationCenter defaultCenter] postNotification:notification];
-                return;
-            }
+            case WXErrCodeCommon:
+                strMsg =@"普通错误";
                 break;
             case WXErrCodeUserCancel:
                 strMsg =@"取消支付";
@@ -124,7 +116,6 @@
     switch (code) {
         case 9000:
             NSLog(@"支付宝支付成功");
-            [[Event getInstance] handleEvent:ALIPAY_WORK_DONE data:@(code)];
             break;
         case 8000:
             NSLog(@"正在处理中")

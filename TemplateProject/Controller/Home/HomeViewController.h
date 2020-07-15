@@ -12,7 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HomeViewController : BaseViewController
-buildMVPInControllerH(HomePresenter);
+buildMVPInControllerH(HomePresenter);//创建一个叫presenter的属性，类型是HomePresenter
 
 @end
 

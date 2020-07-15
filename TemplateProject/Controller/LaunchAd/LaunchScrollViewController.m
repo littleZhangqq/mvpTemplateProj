@@ -57,7 +57,7 @@
                 sender.titleLabel.font = FONT_CUSTOM(17);
             } andMasonry:^(MASConstraintMaker * _Nonnull make) {
                 make.centerX.equalTo(imv);
-                make.bottom.equalTo(-H(20)-BOTTOM);
+                make.bottom.equalTo(-H(20)-(isiPhoneXSeries?34:0));
                 make.size.equalTo(CGSizeMake(W(146), W(46)));
             } andEvent:^{
                 if (i != launchScrollImages.count-1) {

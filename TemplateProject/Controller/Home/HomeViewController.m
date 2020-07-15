@@ -18,7 +18,7 @@ ProStrong UILabel *topLabel;
 @end
 
 @implementation HomeViewController
-buildMVPInControllerM;
+buildMVPInControllerM;//为presenter自动生成get方法
 
 - (void)initNavis{
     self.title = @"111";

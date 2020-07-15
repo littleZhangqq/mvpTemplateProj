@@ -12,7 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HomePresenter : BasePresenter
-buildMVPInPresenterH(HomeRecord);
+buildMVPInPresenterH(HomeRecord);//创建一个叫record的属性，类型是HomeRecord
 
 ProStrong AppInitRecord *appRecord;
 

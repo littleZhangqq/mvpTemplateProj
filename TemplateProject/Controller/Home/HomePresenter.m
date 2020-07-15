@@ -10,7 +10,7 @@
 #import "HomeRecord.h"
 
 @implementation HomePresenter
-buildMVPInPresenterM;
+buildMVPInPresenterM;//为record自动生成get方法
 
 - (void)controllerWillAppear{
     [self task:HOME_DATA param:@{} type:Post];
