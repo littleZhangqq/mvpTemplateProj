@@ -18,7 +18,7 @@ ProStrong UITableView *tableView;
 buildMVPInControllerM;
 
 - (void)initNavis{
-    self.title = @"加油";
+    self.title = @"列表";
 }
 
 - (void)initViews{
