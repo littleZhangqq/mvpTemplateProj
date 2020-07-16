@@ -34,7 +34,6 @@
 #import "Constance.h"
 #import "RequestSufix.h"
 #import "ExternMarco.h"
-#import "Event.h"
 #import "LoadingView.h"
 #import "RootNavigationViewController.h"
 #import "RootTabbarViewController.h"

@@ -42,8 +42,6 @@ ProWeak BaseViewController *controller;
 ProStrong BaseRecord *record;
 //代理方法，controller中刷新页面方法在这里
 ProWeak id<PresenterDelegate> delegate;
-//同步阻塞，多个网络请求同时发生，后进入的需要等待前面的完成才能继续调用
-ProUnsafe BOOL isRequesting;
 
 //网络请求
 -(void)task:(NSString *)url param:(NSDictionary *)param type:(RequestType)type;
@@ -55,7 +53,7 @@ ProUnsafe BOOL isRequesting;
 /// @param resp 是回调数据，可能为各种类型所以用ID
 -(void)taskDone:(id)resp fromUrl:(NSString *)url;
 
-/// 请求成功 但参数或其他错误，code不是200
+/// 请求成功 但参数有错误或其他错误，code不是200
 /// @param msg 错误提示
 /// @param code 错误码
 -(void)taskError:(NSString *)msg code:(NSInteger)code;

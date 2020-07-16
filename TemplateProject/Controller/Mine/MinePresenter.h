@@ -7,10 +7,12 @@
 //
 
 #import "BasePresenter.h"
+#import "UserRecord.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MinePresenter : BasePresenter
+buildMVPInPresenterH(UserRecord);
 
 @end
 

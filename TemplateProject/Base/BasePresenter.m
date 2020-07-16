@@ -11,6 +11,8 @@
 @interface BasePresenter()
 
 ProStrong NSMutableDictionary *requestNotes;
+//同步阻塞，多个网络请求同时发生，后进入的需要等待前面的完成才能继续调用
+ProUnsafe BOOL isRequesting;
 
 @end
 

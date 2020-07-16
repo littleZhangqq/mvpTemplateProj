@@ -9,5 +9,6 @@
 #import "MinePresenter.h"
 
 @implementation MinePresenter
+buildMVPInPresenterM;
 
 @end

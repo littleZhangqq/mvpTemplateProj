@@ -21,7 +21,7 @@ ProStrong UILabel *topLabel;
 buildMVPInControllerM;//为presenter自动生成get方法
 
 - (void)initNavis{
-    self.title = @"111";
+    self.title = @"Home";
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle{
@@ -66,32 +66,8 @@ buildMVPInControllerM;//为presenter自动生成get方法
     }];
 }
 
--(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    NSInteger shopCount = 0;
-    NSInteger taskCount = 0;
-    if (self.presenter.record.invites.count > 0) {
-        taskCount = 1;
-    }
-    if (self.presenter.record.brands.count > 0) {
-        shopCount = 1;
-    }
-    return shopCount + taskCount;
-}
-
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    if ([tableView numberOfSections] == 2) {
-        if (section == 0) {
-            return self.presenter.record.invites.count;
-        }else{
-            return self.presenter.record.brands.count;
-        }
-    }else{
-        if (self.presenter.record.invites.count > 0) {
-            return self.presenter.record.invites.count;
-        }else{
-            return self.presenter.record.brands.count;
-        }
-    }
+    return self.presenter.record.brands.count;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
@@ -120,33 +96,21 @@ buildMVPInControllerM;//为presenter自动生成get方法
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-    if ([tableView numberOfSections] == 2) {
-        if (indexPath.section == 0) {
-            HomeInviteRecord *invite = self.presenter.record.invites[indexPath.row];
-            cell.textLabel.text = invite.desc;
-        }else{
-            BrandRecord *brand = self.presenter.record.brands[indexPath.row];
-            cell.textLabel.text = brand.name;
-        }
-    }else{
-        if (self.presenter.record.invites.count > 0) {
-            HomeInviteRecord *invite = self.presenter.record.invites[indexPath.row];
-            cell.textLabel.text = invite.desc;
-        }else{
-            BrandRecord *brand = self.presenter.record.brands[indexPath.row];
-            cell.textLabel.text = brand.name;
-        }
-    }
+    BrandRecord *brand = self.presenter.record.brands[indexPath.row];
+    cell.textLabel.text = brand.name;
     return cell;
 }
 
 #pragma mark 网络请求代理
 - (void)handleSuccess:(NSString *)url{
     if (EqualString(url, HOME_DATA)) {
+        //显示主页数据
         [_tableView reloadData];
     }else if (EqualString(url, APP_INIT)){
+        //显示更新弹窗
         [self.updateView showViewWithAnimation:ViewShowAnimatePostionedCenter];
     }else if (EqualString(url, HOME_COUPON)){
+        //更新顶部数据
         [self updateTopView];
     }
 }

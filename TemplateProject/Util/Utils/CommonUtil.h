@@ -8,9 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-
 NS_ASSUME_NONNULL_BEGIN
-
 
 inline static void placeHolder(UITextField *view,NSString *holder,UIColor *color,UIFont *font){
     if (@available(iOS 13,*)) {
@@ -36,26 +34,6 @@ inline static void removeSubviewsFrom(UIView *view){
         UIView *sub = view.subviews.lastObject;
         [sub removeFromSuperview];
     } while (view.subviews.count);
-}
-
-typedef void(^testBlock)(void) ;
-inline static void test(testBlock block){
-    if (APPTYPE == 0) {
-        block();
-    }
-}
-
-//这个方法只适用于无导航栏页面 从屏幕顶部开始计算高度。有导航的正常走height内联函数即可
-inline static void safeAreaTop(UIView * _Nonnull superView,MASConstraintMaker * _Nullable make,CGFloat margin){
-    if (@available(iOS 11.0, *)) {
-        if (iPhoneX || iPhoneXM || iPhoneXR) {
-            make.top.equalTo(superView.top).offset(margin-20+44);
-        }else{
-            make.top.equalTo(superView.top).offset(margin);
-        }
-    }else {
-        make.top.equalTo(superView.top).offset(margin);
-    }
 }
 
 inline static CGFloat W(CGFloat w){

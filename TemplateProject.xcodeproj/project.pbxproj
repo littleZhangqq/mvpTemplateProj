@@ -25,12 +25,7 @@
 		84AEFB5F24B852E100368EC2 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AEFB5E24B852E100368EC2 /* BaseView.m */; };
 		84AEFB6224B852EE00368EC2 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AEFB6124B852EE00368EC2 /* BaseTableViewCell.m */; };
 		84AEFB6524B852F900368EC2 /* BaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AEFB6424B852F900368EC2 /* BaseCollectionViewCell.m */; };
-		84AEFB7024B8546500368EC2 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AEFB6F24B8546500368EC2 /* LocationManager.m */; };
-		84AEFB7524B854D000368EC2 /* ShareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AEFB7424B854D000368EC2 /* ShareManager.m */; };
 		84AEFB7824B8550C00368EC2 /* NetWorkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AEFB7724B8550C00368EC2 /* NetWorkTool.m */; };
-		84AEFB7B24B8551C00368EC2 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AEFB7A24B8551C00368EC2 /* Event.m */; };
-		84AEFB7E24B8553300368EC2 /* GPUManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AEFB7D24B8553300368EC2 /* GPUManager.m */; };
-		84AEFB8124B8553F00368EC2 /* AVPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AEFB8024B8553F00368EC2 /* AVPlayerManager.m */; };
 		84AEFB8B24B8574F00368EC2 /* LaunchScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AEFB8A24B8574F00368EC2 /* LaunchScrollViewController.m */; };
 		84AEFB8E24B8576A00368EC2 /* ADShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AEFB8D24B8576A00368EC2 /* ADShowViewController.m */; };
 		84AEFB9124B85A3400368EC2 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AEFB9024B85A3400368EC2 /* HomeViewController.m */; };
@@ -105,18 +100,8 @@
 		84AEFB6124B852EE00368EC2 /* BaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
 		84AEFB6324B852F900368EC2 /* BaseCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewCell.h; sourceTree = "<group>"; };
 		84AEFB6424B852F900368EC2 /* BaseCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionViewCell.m; sourceTree = "<group>"; };
-		84AEFB6E24B8546500368EC2 /* LocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
-		84AEFB6F24B8546500368EC2 /* LocationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
-		84AEFB7324B854D000368EC2 /* ShareManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareManager.h; sourceTree = "<group>"; };
-		84AEFB7424B854D000368EC2 /* ShareManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareManager.m; sourceTree = "<group>"; };
 		84AEFB7624B8550C00368EC2 /* NetWorkTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetWorkTool.h; sourceTree = "<group>"; };
 		84AEFB7724B8550C00368EC2 /* NetWorkTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetWorkTool.m; sourceTree = "<group>"; };
-		84AEFB7924B8551C00368EC2 /* Event.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
-		84AEFB7A24B8551C00368EC2 /* Event.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
-		84AEFB7C24B8553300368EC2 /* GPUManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUManager.h; sourceTree = "<group>"; };
-		84AEFB7D24B8553300368EC2 /* GPUManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPUManager.m; sourceTree = "<group>"; };
-		84AEFB7F24B8553F00368EC2 /* AVPlayerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVPlayerManager.h; sourceTree = "<group>"; };
-		84AEFB8024B8553F00368EC2 /* AVPlayerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVPlayerManager.m; sourceTree = "<group>"; };
 		84AEFB8924B8574F00368EC2 /* LaunchScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchScrollViewController.h; sourceTree = "<group>"; };
 		84AEFB8A24B8574F00368EC2 /* LaunchScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchScrollViewController.m; sourceTree = "<group>"; };
 		84AEFB8C24B8576A00368EC2 /* ADShowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADShowViewController.h; sourceTree = "<group>"; };
@@ -240,7 +225,6 @@
 			children = (
 				84AEFB7124B854A100368EC2 /* Utils */,
 				84AEFB8224B8568100368EC2 /* AssistView */,
-				84AEFB7224B854BB00368EC2 /* ChangeHost */,
 				84AEFB6D24B8544900368EC2 /* Category */,
 			);
 			path = Util;
@@ -403,31 +387,14 @@
 				84AEFB4024B84CB100368EC2 /* CommonModel.m */,
 				84AEFB4224B84CCA00368EC2 /* CommonUtil.h */,
 				84AEFB4324B84CCA00368EC2 /* CommonUtil.m */,
-				84AEFB6E24B8546500368EC2 /* LocationManager.h */,
-				84AEFB6F24B8546500368EC2 /* LocationManager.m */,
-				84AEFB7324B854D000368EC2 /* ShareManager.h */,
-				84AEFB7424B854D000368EC2 /* ShareManager.m */,
 				84AEFB7624B8550C00368EC2 /* NetWorkTool.h */,
 				84AEFB7724B8550C00368EC2 /* NetWorkTool.m */,
-				84AEFB7924B8551C00368EC2 /* Event.h */,
-				84AEFB7A24B8551C00368EC2 /* Event.m */,
-				84AEFB7C24B8553300368EC2 /* GPUManager.h */,
-				84AEFB7D24B8553300368EC2 /* GPUManager.m */,
-				84AEFB7F24B8553F00368EC2 /* AVPlayerManager.h */,
-				84AEFB8024B8553F00368EC2 /* AVPlayerManager.m */,
 				84AEFBC924BD42AA00368EC2 /* LoadingView.h */,
 				84AEFBCA24BD42AA00368EC2 /* LoadingView.m */,
 				84AEFC1024BD9D0A00368EC2 /* HBHUDTool.h */,
 				84AEFC1124BD9D0A00368EC2 /* HBHUDTool.m */,
 			);
 			path = Utils;
-			sourceTree = "<group>";
-		};
-		84AEFB7224B854BB00368EC2 /* ChangeHost */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ChangeHost;
 			sourceTree = "<group>";
 		};
 		84AEFB8224B8568100368EC2 /* AssistView */ = {
@@ -675,10 +642,7 @@
 				84AEFB5924B852C800368EC2 /* BasePresenter.m in Sources */,
 				84AEFBE724BD7D4500368EC2 /* NullSafe.m in Sources */,
 				84AEFBF424BD7D4500368EC2 /* NSString+Validate.m in Sources */,
-				84AEFB7024B8546500368EC2 /* LocationManager.m in Sources */,
 				84AEFB8B24B8574F00368EC2 /* LaunchScrollViewController.m in Sources */,
-				84AEFB7E24B8553300368EC2 /* GPUManager.m in Sources */,
-				84AEFB8124B8553F00368EC2 /* AVPlayerManager.m in Sources */,
 				84AEFBB924BC537000368EC2 /* GasStationRecord.m in Sources */,
 				84AEFB2924B6DFFA00368EC2 /* main.m in Sources */,
 				84AEFBC524BC53C300368EC2 /* UserRecord.m in Sources */,
@@ -691,11 +655,9 @@
 				84AEFBBC24BC538000368EC2 /* GasStationPresenter.m in Sources */,
 				84AEFC1524BEC79500368EC2 /* UpdateView.m in Sources */,
 				84AEFB4424B84CCA00368EC2 /* CommonUtil.m in Sources */,
-				84AEFB7B24B8551C00368EC2 /* Event.m in Sources */,
 				84AEFB5224B8528400368EC2 /* RootTabbarViewController.m in Sources */,
 				84AEFBF824BD810D00368EC2 /* UINavigationController+Addtion.m in Sources */,
 				84AEFB5F24B852E100368EC2 /* BaseView.m in Sources */,
-				84AEFB7524B854D000368EC2 /* ShareManager.m in Sources */,
 				84AEFB4F24B8527100368EC2 /* RootNavigationViewController.m in Sources */,
 				84AEFBE924BD7D4500368EC2 /* NSObject+Swizzling.m in Sources */,
 				84AEFB5C24B852D600368EC2 /* BaseRecord.m in Sources */,
