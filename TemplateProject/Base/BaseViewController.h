@@ -27,6 +27,7 @@ ProStrong BasePresenter *presenter;
 -(void)setRightNaviBarWith:(NSString *)title font:(NSInteger)font titleColor:(UIColor *)color image:(NSString *)image;
 - (void)clickBackButton;
 -(void)clickRightButton;
+-(void)handleTapEvent:(UIView *)view;
 - (UIImageView *)getLineViewInNavigationBar:(UIView *)view;
 -(void)getTabbarTopLineHidden:(BOOL)hide;
 

@@ -62,7 +62,7 @@ inline static CGFloat H(CGFloat h){
 +(UILabel *)createLabelWithSuper:(UIView *)view fontSize:(UIFont *)font text:(NSString *)text color:(UIColor *)color size:(void(^)(MASConstraintMaker *make))maker;
 +(UIImageView *)createImageWithSuper:(UIView *)view imageName:(NSString *)name mode:(UIViewContentMode)mode size:(void(^)(MASConstraintMaker *make))maker;
 +(UIView *)addLineForView:(UIView *)view lineColor:(UIColor *)color andMasonry:(void(^)(MASConstraintMaker *make))maker;
-+(UIButton *)createBottomButtonFor:(UIView *)view andTitle:(NSString *)title;
++(UIButton *)createButtonForView:(UIView *)view withButtonDetail:(void(^)( UIButton *sender))btnBlock andMasonry:(void(^)(MASConstraintMaker *make))maker;
 +(UIButton *)createButtonForView:(UIView *)view withButtonDetail:(void(^)( UIButton *sender))btnBlock andMasonry:(void(^)(MASConstraintMaker *make))maker andEvent:(void(^)(void))eventBlock;
 + (NSString *)iphoneType;
 +(UIImage *)getLocalThumbnailImage:(NSURL *)videoURL;

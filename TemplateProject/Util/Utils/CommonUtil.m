@@ -193,6 +193,14 @@
     return btn;
 }
 
++(UIButton *)createButtonForView:(UIView *)view withButtonDetail:(void(^)( UIButton *sender))btnBlock andMasonry:(void(^)(MASConstraintMaker *make))maker{
+    UIButton *btn = [UIButton buttonWithType:0];
+    btnBlock(btn);
+    [view addSubview:btn];
+    [btn mas_makeConstraints:maker];
+    return btn;
+}
+
 + (NSString *)iphoneType{//
     struct utsname systemInfo;
     uname(&systemInfo);

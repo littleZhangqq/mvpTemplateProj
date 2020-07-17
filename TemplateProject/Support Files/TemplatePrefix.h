@@ -25,6 +25,8 @@
 #import <IQKeyboardManager.h>
 
 #import "NSObject+Swizzling.h"
+#import "UIView+TapExpand.h"
+#import "UIButton+SendAction.h"
 #import "AppDelegate+Service.h"
 #import "AppDelegate+PushNotification.h"
 #import "UINavigationController+Addtion.h"

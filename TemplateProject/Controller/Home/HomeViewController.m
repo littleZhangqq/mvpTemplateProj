@@ -14,6 +14,8 @@
 ProStrong UpdateView *updateView;
 ProStrong UITableView *tableView;
 ProStrong UILabel *topLabel;
+ProStrong UIButton *btn1;
+ProStrong UIButton *btn2;
 
 @end
 
@@ -55,7 +57,24 @@ buildMVPInControllerM;//为presenter自动生成get方法
         make.left.equalTo(100);
         make.top.equalTo(50);
     }];
+    _topLabel.userInteractionEnabled = YES;
     self.updateView.hidden = YES;
+    
+    _btn1 = [CommonUtil createButtonForView:topView withButtonDetail:^(UIButton * _Nonnull sender) {
+        [sender setTitle:@"btn1" forState:0];
+        [sender setTitleColor:COLOR(blackColor) forState:0];
+    } andMasonry:^(MASConstraintMaker * _Nonnull make) {
+        make.centerY.equalTo(topView);
+        make.left.equalTo(40);
+    }];
+    
+    _btn2 = [CommonUtil createButtonForView:topView withButtonDetail:^(UIButton * _Nonnull sender) {
+        [sender setTitle:@"btn2" forState:0];
+        [sender setTitleColor:COLOR(blackColor) forState:0];
+    } andMasonry:^(MASConstraintMaker * _Nonnull make) {
+        make.centerY.equalTo(topView);
+        make.right.equalTo(-40);
+    }];
 }
 
 -(void)updateTopView{
@@ -124,6 +143,16 @@ buildMVPInControllerM;//为presenter自动生成get方法
         _updateView = [[UpdateView alloc] init];
     }
     return _updateView;
+}
+
+- (void)handleTapEvent:(UIView *)view{
+    if (view == _btn1) {
+        NSLog(@"btn1点击了");
+    }else if (view == _btn2){
+        NSLog(@"btn2点击了");
+    }else if (view == _topLabel){
+        NSLog(@"label点击了");
+    }
 }
 
 @end

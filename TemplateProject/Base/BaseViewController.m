@@ -131,6 +131,7 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [super touchesBegan:touches withEvent:event];
     UITouch *touch = touches.anyObject;
     if (![touch.view isKindOfClass:[UITextField class]] || ![touch.view isKindOfClass:[UITextView class]]) {
         [self.view endEditing:YES];
@@ -141,6 +142,7 @@
 -(void)initData{}
 -(void)initViews{}
 -(void)initNavis{}
+-(void)handleTapEvent:(UIView *)view{}
 
 -(void)pushViewControlUseBaseMethod:(BaseViewController *)ctl animate:(BOOL)animate{
     dispatch_async(dispatch_get_main_queue(), ^{

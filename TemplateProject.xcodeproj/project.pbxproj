@@ -58,6 +58,8 @@
 		84AEFC0F24BD9C3200368EC2 /* loading8.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AEFC0424BD9C3200368EC2 /* loading8.png */; };
 		84AEFC1224BD9D0A00368EC2 /* HBHUDTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AEFC1124BD9D0A00368EC2 /* HBHUDTool.m */; };
 		84AEFC1524BEC79500368EC2 /* UpdateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AEFC1424BEC79500368EC2 /* UpdateView.m */; };
+		84FC74ED24C1838F00853F69 /* UIView+TapExpand.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FC74EC24C1838F00853F69 /* UIView+TapExpand.m */; };
+		84FC74F024C184C900853F69 /* UIButton+SendAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FC74EF24C184C900853F69 /* UIButton+SendAction.m */; };
 		D0089E31A77966025340365F /* libPods-TemplateProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B70BFAB5F8315E15ED59937D /* libPods-TemplateProject.a */; };
 /* End PBXBuildFile section */
 
@@ -155,6 +157,10 @@
 		84AEFC1124BD9D0A00368EC2 /* HBHUDTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBHUDTool.m; sourceTree = "<group>"; };
 		84AEFC1324BEC79500368EC2 /* UpdateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UpdateView.h; sourceTree = "<group>"; };
 		84AEFC1424BEC79500368EC2 /* UpdateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UpdateView.m; sourceTree = "<group>"; };
+		84FC74EB24C1838F00853F69 /* UIView+TapExpand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+TapExpand.h"; sourceTree = "<group>"; };
+		84FC74EC24C1838F00853F69 /* UIView+TapExpand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+TapExpand.m"; sourceTree = "<group>"; };
+		84FC74EE24C184C900853F69 /* UIButton+SendAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+SendAction.h"; sourceTree = "<group>"; };
+		84FC74EF24C184C900853F69 /* UIButton+SendAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+SendAction.m"; sourceTree = "<group>"; };
 		B70BFAB5F8315E15ED59937D /* libPods-TemplateProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TemplateProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D161C629A9DC720B8C823A36 /* Pods-TemplateProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemplateProject.release.xcconfig"; path = "Target Support Files/Pods-TemplateProject/Pods-TemplateProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -376,6 +382,10 @@
 				84AEFBCC24BD7D4300368EC2 /* NullSafe.m */,
 				84AEFBF624BD810D00368EC2 /* UINavigationController+Addtion.h */,
 				84AEFBF724BD810D00368EC2 /* UINavigationController+Addtion.m */,
+				84FC74EB24C1838F00853F69 /* UIView+TapExpand.h */,
+				84FC74EC24C1838F00853F69 /* UIView+TapExpand.m */,
+				84FC74EE24C184C900853F69 /* UIButton+SendAction.h */,
+				84FC74EF24C184C900853F69 /* UIButton+SendAction.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -642,7 +652,9 @@
 				84AEFB5924B852C800368EC2 /* BasePresenter.m in Sources */,
 				84AEFBE724BD7D4500368EC2 /* NullSafe.m in Sources */,
 				84AEFBF424BD7D4500368EC2 /* NSString+Validate.m in Sources */,
+				84FC74F024C184C900853F69 /* UIButton+SendAction.m in Sources */,
 				84AEFB8B24B8574F00368EC2 /* LaunchScrollViewController.m in Sources */,
+				84FC74ED24C1838F00853F69 /* UIView+TapExpand.m in Sources */,
 				84AEFBB924BC537000368EC2 /* GasStationRecord.m in Sources */,
 				84AEFB2924B6DFFA00368EC2 /* main.m in Sources */,
 				84AEFBC524BC53C300368EC2 /* UserRecord.m in Sources */,
