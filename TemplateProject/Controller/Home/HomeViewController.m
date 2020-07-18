@@ -147,11 +147,17 @@ buildMVPInControllerM;//为presenter自动生成get方法
 
 - (void)handleTapEvent:(UIView *)view{
     if (view == _btn1) {
+        //拦截控制器内的按钮
         NSLog(@"btn1点击了");
     }else if (view == _btn2){
+        //拦截控制器内的按钮
         NSLog(@"btn2点击了");
     }else if (view == _topLabel){
+        //拦截控制器内的label点击事件，只给label设置userinterfaceEnable = yes即可。
         NSLog(@"label点击了");
+    }else if (view == [self.updateView viewWithTag:2000]){
+        //拦截UIview内的label点击。给view内的label设置userinterfaceEnable = yes，然后设置tag值或声明一个外部可访问的属性即可。
+        NSLog(@"update的label");
     }
 }
 

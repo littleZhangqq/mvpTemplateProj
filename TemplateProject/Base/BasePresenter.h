@@ -31,7 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param url 事件名
 -(void)handleError:(NSString *)msg code:(NSInteger)code url:(NSString *)url;
 
-///说明：仅限继承BaseViewController控制器内的控件可以直接使用此方法，继承自UIView内的控件需要自己实现点击方法。 拦截controller内的点击事件，包括UIbutton，各种继承自UIcontrol的控件等。通常我们写布局会有很多按钮，点击事件如果是通过系统的addTarget方法来写代码会很长也不方便，每个方法都要写名字。如果使用rac的话是方便，但是在创建视图的方法里会有多个按钮的block事件，找起来麻烦。改动起来也要频繁去类似createUI这种方法里去寻找。这里通过扩展的方式拦截了继承自UIbutton和UIview的控件的点击事件，统统传入下面的方法内，只要viewcontroller绑定好自己的presenter后实现下面的代理方法，就可将所有的点击事件一起处理，根据view的类型或tag值区分即可，便于管理和改动。
+///说明：继承BaseViewController控制器内的控件可以直接使用此方法，继承自UIView内的控件需要设置控件的属性声明或者设置控件的tag值。在使用到view的control内也可以拦截，homeviewcontroller内有代码。 拦截controller内的点击事件，包括UIbutton，各种继承自UIcontrol的控件等。通常我们写布局会有很多按钮，点击事件如果是通过系统的addTarget方法来写代码会很长也不方便，每个方法都要写名字。如果使用rac的话是方便，但是在创建视图的方法里会有多个按钮的block事件，找起来麻烦。改动起来也要频繁去类似createUI这种方法里去寻找。这里通过扩展的方式拦截了继承自UIbutton和UIview的控件的点击事件，统统传入下面的方法内，只要viewcontroller绑定好自己的presenter后实现下面的代理方法，就可将所有的点击事件一起处理，根据view的类型或tag值区分即可，便于管理和改动。
 /// @param view 可根据view的具体类型或tag值来进行区分。如if(view == testButton) 或 if(view.tag == 1000)；
 -(void)handleTapEvent:(UIView *)view;
 

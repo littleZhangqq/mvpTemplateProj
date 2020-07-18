@@ -41,6 +41,13 @@
     } andEvent:^{
         [weakSelf dismissView];
     }];
+    
+    UILabel *titleLabel = [CommonUtil createLabelWithSuper:self.bgView fontSize:FONT_CUSTOM(15) text:@"title：点我试试" color:COLOR(blackColor) size:^(MASConstraintMaker * _Nonnull make) {
+        make.centerX.equalTo(self.bgView);
+        make.left.equalTo(20);
+    }];
+    titleLabel.tag = 2000;
+    titleLabel.userInteractionEnabled = YES;
 }
 
 @end

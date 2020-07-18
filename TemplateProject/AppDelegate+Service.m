@@ -50,7 +50,6 @@
         [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_Sina appKey:sinaAppKey  appSecret:sinaAppSecret redirectURL:redirectURL];
         
         [WXApi registerApp:wxAppKey];
-//        [UMConfigure initWithAppkey:umAppKey channel:APPTYPE == 0 ?@"TEST":@"App Store"];
         [MobClick setScenarioType:E_UM_NORMAL];
         [MobClick setCrashReportEnabled:YES];
     });
