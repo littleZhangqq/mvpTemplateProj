@@ -8,6 +8,7 @@
 
 #import "HomeViewController.h"
 #import "UpdateView.h"
+#import "WebViewController.h"
 
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -149,6 +150,9 @@ buildMVPInControllerM;//为presenter自动生成get方法
     if (view == _btn1) {
         //拦截控制器内的按钮
         NSLog(@"btn1点击了");
+        WebViewController *web = [WebViewController new];
+        web.url = @"https://www.baidu.com";
+        [self pushViewControlUseBaseMethod:web animate:YES];
     }else if (view == _btn2){
         //拦截控制器内的按钮
         NSLog(@"btn2点击了");

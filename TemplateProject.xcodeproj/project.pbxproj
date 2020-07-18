@@ -60,6 +60,7 @@
 		84AEFC1524BEC79500368EC2 /* UpdateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AEFC1424BEC79500368EC2 /* UpdateView.m */; };
 		84FC74ED24C1838F00853F69 /* UIView+TapExpand.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FC74EC24C1838F00853F69 /* UIView+TapExpand.m */; };
 		84FC74F024C184C900853F69 /* UIButton+SendAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FC74EF24C184C900853F69 /* UIButton+SendAction.m */; };
+		84FC74F324C29FBF00853F69 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FC74F224C29FBF00853F69 /* WebViewController.m */; };
 		D0089E31A77966025340365F /* libPods-TemplateProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B70BFAB5F8315E15ED59937D /* libPods-TemplateProject.a */; };
 /* End PBXBuildFile section */
 
@@ -161,6 +162,8 @@
 		84FC74EC24C1838F00853F69 /* UIView+TapExpand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+TapExpand.m"; sourceTree = "<group>"; };
 		84FC74EE24C184C900853F69 /* UIButton+SendAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+SendAction.h"; sourceTree = "<group>"; };
 		84FC74EF24C184C900853F69 /* UIButton+SendAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+SendAction.m"; sourceTree = "<group>"; };
+		84FC74F124C29FBF00853F69 /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		84FC74F224C29FBF00853F69 /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		B70BFAB5F8315E15ED59937D /* libPods-TemplateProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TemplateProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D161C629A9DC720B8C823A36 /* Pods-TemplateProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemplateProject.release.xcconfig"; path = "Target Support Files/Pods-TemplateProject/Pods-TemplateProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -467,6 +470,8 @@
 		84AEFB9B24B85FBB00368EC2 /* WKWebController */ = {
 			isa = PBXGroup;
 			children = (
+				84FC74F124C29FBF00853F69 /* WebViewController.h */,
+				84FC74F224C29FBF00853F69 /* WebViewController.m */,
 			);
 			path = WKWebController;
 			sourceTree = "<group>";
@@ -650,6 +655,7 @@
 				84AEFB6524B852F900368EC2 /* BaseCollectionViewCell.m in Sources */,
 				84AEFB1824B6DFF400368EC2 /* AppDelegate.m in Sources */,
 				84AEFB5924B852C800368EC2 /* BasePresenter.m in Sources */,
+				84FC74F324C29FBF00853F69 /* WebViewController.m in Sources */,
 				84AEFBE724BD7D4500368EC2 /* NullSafe.m in Sources */,
 				84AEFBF424BD7D4500368EC2 /* NSString+Validate.m in Sources */,
 				84FC74F024C184C900853F69 /* UIButton+SendAction.m in Sources */,
